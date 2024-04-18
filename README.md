@@ -1,2 +1,2 @@
 # toc
-Notas sobre la teoría de restricciones de goldratt
+Notas sobre la teoría de restricciones de Goldratt
