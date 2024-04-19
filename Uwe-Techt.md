@@ -1,3 +1,29 @@
+# ¿Cuáles son los objetivos de la TOC?
+Algunas preguntas importantes que todo administrador necesita hacerse una y otra y vez a lo largo de su negocio.
+
+ - ¿Cuáles son los objetivos de mi negocio?
+ - ¿Cómo puedo alcanzar estos objetivos?
+ - ¿Qué estrategias y tácticas debo utilizar?
+ - ¿Cómo puedo ordenar mis prioridades?
+ - ¿Cómo puedo mantener una visión total de mi negocio?
+ - ¿Cómo puedo lograr que mi negocio crezca?
+ 
+ La TOC contesta estas preguntas de una forma tangible y concreta, permitiendo el desarrollo de estrategias exitosas para su empresa.
+
+# ¿Cuáles son los beneficios de aplicar la TOC?
+
+La TOC se puede aplicar a organizaciones de cualquier tipo y tamaño y a todo tipo de industrias, los beneficios son:
+
+- Aumento de las ganancias por un mejor uso de nuestros recursos.
+- Evitar el decremento del capital de la empresa causado por reestructuraciones y otras medidas de contabilidad de costos.
+- Hacer cambios e inversiones solo en las áreas que es necesario, concentrado nuestros esfuerzos solo en estas áreas específicas.
+- Asegurar que los cambios no tengan consecuencias imprevistas.
+- Convencer al personal de la necesidad de estas medidas.
+- Aplicar los cambios de una manera rápida y efectiva a toda la organización.
+- Alinear los precios de nuestros productos con la expectativa de los clientes, segmentar el mercado de forma hábil y entregar nuestros productos con ganancia.
+- Diseñar nuestros productos y servicios para resolver las necesidades más urgentes de nuestros clientes.
+   
+
 # Ganar Dinero de acuerdo con la TOC
 
 ## Indicadores Financieros
