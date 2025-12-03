@@ -1,0 +1,20 @@
+recursos:
+    maquina_cortar: 2400
+    maquina_coser: 2400
+
+productos:
+    camisa_hombre:
+        costo_ventas: 50
+        recursos:
+            maquina_cortar: 10
+            maquina_coser: 10
+        precio: 100
+        demanda: 60
+
+    camisa_mujer:
+        costo_ventas: 45
+        recursos:
+            maquina_cortar: 2
+            maquina_coser: 15
+        precio: 105
+        demanda: 60

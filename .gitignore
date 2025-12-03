@@ -1,0 +1,7 @@
+# python environment
+py312
+
+# archivos de salida
+*.csv
+*.txt
+*.png
