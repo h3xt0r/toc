@@ -15,6 +15,10 @@ def load_data_from_file(file_path):
 
     with open(file_path, 'r', encoding='utf-8') as file:
         datos = yaml.load(file, Loader=SafeLoader)
+
+    # Tolerancia a la clave gastos_operacion (NUEVA LÍNEA)
+    if "gastos_operacion" not in datos:
+         datos["gastos_operacion"] = {}
     return datos
 
 # ----------------------------------------------------------------------

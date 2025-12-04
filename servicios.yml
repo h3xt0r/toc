@@ -1,0 +1,30 @@
+recursos:
+    consultor_senior: 320 # 160 horas al mes por dos
+    analista_junior: 480  # dos personas por 160 horas c/u (aumentando la restriccion)
+    equipo_soporte: 320  # 2 personas * 160 horas
+
+productos:
+    # 1. Servicio de Desarrollo de App
+    desarrollo_app:
+        costo_ventas: 500  # Costo de licencias o software third-party
+        recursos:
+            consultor_senior: 40 # horas por demanda (consulta, app, etc)
+            analista_junior: 80 # horas por demanda (consulta, app, etc)
+        precio: 15000
+        demanda: 5  # Demanda mensual máxima
+        
+    # 2. Servicio de Auditoría de Red
+    auditoria_red:
+        costo_ventas: 100  # costo de licencias u otros
+        recursos:
+            consultor_senior: 10   # horas por servicio
+            equipo_soporte: 5   # horas por servicio
+        precio: 3000
+        demanda: 10   # numero de servicios por mes
+
+gastos_operacion: # <-- ¡NUEVA CLAVE!
+    sueldos: 72000
+    luz: 100
+    telefono: 650
+    agua: 300
+    renta: 15000
