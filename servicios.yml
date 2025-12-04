@@ -1,6 +1,6 @@
 recursos:
     consultor_senior: 320 # 160 horas al mes por dos
-    analista_junior: 480  # dos personas por 160 horas c/u (aumentando la restriccion)
+    analista_junior: 480  # tres personas por 160 horas c/u (aumentando la restriccion)
     equipo_soporte: 320  # 2 personas * 160 horas
 
 productos:
@@ -15,14 +15,14 @@ productos:
         
     # 2. Servicio de Auditoría de Red
     auditoria_red:
-        costo_ventas: 100  # costo de licencias u otros
+        costo_ventas: 100  # costo de licencias, transporte u otros
         recursos:
             consultor_senior: 10   # horas por servicio
             equipo_soporte: 5   # horas por servicio
-        precio: 3000
+        precio: 3000  # precio por servicio
         demanda: 10   # numero de servicios por mes
 
-gastos_operacion: # <-- ¡NUEVA CLAVE!
+gastos_operacion:  # poner aqui los gasto de operacion de acuerdo con TOC
     sueldos: 72000
     luz: 100
     telefono: 650

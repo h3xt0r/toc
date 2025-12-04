@@ -20,10 +20,12 @@ def load_data_from_file(file_path):
             
     if "recursos" not in datos or "productos" not in datos:
         raise ValueError("La estructura del archivo es incorrecta. Faltan las claves 'recursos' o 'productos'.")
-    # Removido el print("datos: ", datos) para mantener el código limpio.
+    
     # Asegurar que 'gastos_operacion' existe, si no, inicializarlo como un diccionario vacío
+    
     if "gastos_operacion" not in datos:
          datos["gastos_operacion"] = {}
+
     return datos
 
 # ----------------------------------------------------------------------
