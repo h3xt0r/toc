@@ -9,7 +9,7 @@ productos:
             maquina_cortar: 10
             maquina_coser: 10
         precio: 100
-        demanda: 60
+        demanda: 120
 
     camisa_mujer:
         costo_ventas: 45
@@ -17,4 +17,4 @@ productos:
             maquina_cortar: 2
             maquina_coser: 15
         precio: 105
-        demanda: 60
+        demanda: 120
