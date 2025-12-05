@@ -1,6 +1,6 @@
 recursos:
     consultor_senior: 320 # 160 horas al mes por dos
-    analista_junior: 480  # tres personas por 160 horas c/u (aumentando la restriccion)
+    analista_junior: 480 # tres personas por 160 horas c/u (aumentando la restriccion)
     equipo_soporte: 320  # 2 personas * 160 horas
 
 productos:
@@ -23,7 +23,7 @@ productos:
         demanda: 10   # numero de servicios por mes
 
 gastos_operacion:  # poner aqui los gasto de operacion de acuerdo con TOC
-    sueldos: 72000
+    sueldos: 36000
     luz: 100
     telefono: 650
     agua: 300

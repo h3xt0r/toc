@@ -1,0 +1,90 @@
+recursos:
+    ian: 128 # 160 horas al mes por dos
+    rodrigo: 128 # tres personas por 160 horas c/u (aumentando la restriccion)
+    
+productos:
+    # 1. fumikiller
+    fumi_nov:
+        costo_ventas: 0  # Costo de licencias o software third-party
+        recursos:
+            ian: 5 # horas por demanda (consulta, app, etc)
+            rodrigo: 5 # horas por demanda (consulta, app, etc)
+        precio: 5220
+        demanda: 1  # Demanda mensual máxima
+        
+    # 2. ducan
+    duncan_nov:
+        costo_ventas: 0  # costo de licencias, transporte u otros
+        recursos:
+            ian: 1   # horas por servicio
+            rodrigo: 1   # horas por servicio
+        precio: 4060  # precio por servicio
+        demanda: 1   # numero de servicios por mes
+    
+    # 3. Ana Maya
+    ana_nov: 
+        costo_ventas: 0
+        recursos:
+            rodrigo: 1
+        precio: 1050
+        demanda: 1
+
+    labor_ventas:
+        costo_ventas: 0
+        recursos:
+            rodrigo: 40
+        precio: 0
+        demanda: 1
+
+    limpieza:
+        costo_ventas: 0
+        recursos:
+            ian: 6.67
+            rodrigo: 6.67
+        precio: 0
+        demanda: 1
+
+    facturacion:
+        costo_ventas: 0
+        recursos:
+            ian: 0.5
+            rodrigo: 0.5
+        precio: 0
+        demanda: 1
+
+    reportes:
+        costo_ventas: 0
+        recursos:
+            rodrigo: 0.5
+        precios: 0
+        demanda: 5
+
+    cotizaciones:
+        costo_ventas: 0
+        recursos:
+            rodrigo: 1
+        precios: 0
+        demanda: 11
+
+    r_cam_duncan:
+        costo_ventas: 20
+        recursos:
+            ian: 2
+            rodrigo: 2
+        precio: 0
+        demanda: 1     
+        
+    r_comp_reisix_balb:
+        costo_ventas: 50
+        recursos:
+            ian: 0.6
+            rodrigo: 0.6
+        precio: 0
+        demanda: 1
+
+gastos_operacion:  # poner aqui los gasto de operacion de acuerdo con TOC
+    sueldos: 36000
+    luz: 100
+    telefono: 650
+    agua: 300
+    google: 600

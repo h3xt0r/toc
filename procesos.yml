@@ -1,4 +1,4 @@
-recursos:   # lista de los recursos de la empresa
+recursos:   # lista de los recursos de la empresa con su disponibilidad de tiempo
     maquina_cortar: 2400  # tiempo en minutos
     maquina_coser: 2400  # minutos
 
@@ -12,13 +12,13 @@ productos:  # lista de los productos vendidos
         demanda: 120  # unidades vendidas
 
     camisa_mujer:
-        costo_ventas: 45  # um
+        costo_ventas: 45  # unidades monetarias
         recursos:
-            maquina_cortar: 2  # minutos
-            maquina_coser: 15  #minutos
-        precio: 105  # um
+            maquina_cortar: 4  # minutos
+            maquina_coser: 13  #minutos
+        precio: 105  # unidades monetarias
         demanda: 120  # unidades vendidas
 
 gastos_operacion:
-    sueldos: 10000  # um
+    sueldos: 10000  # unidades monetarias
     luz: 500  # um
