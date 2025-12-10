@@ -1,7 +1,8 @@
 # python environment
 py312
-
+__pycache__/
 # archivos de salida
 *.csv
 *.txt
 *.png
+*.pdf
