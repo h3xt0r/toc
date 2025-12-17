@@ -1,45 +1,19 @@
 import os
-import yaml
 import pandas as pd
-from yaml.loader import SafeLoader
-
-# ----------------------------------------------------------------------
-## FUNCIÓN HELPER: CARGA DE DATOS YAML
-# ----------------------------------------------------------------------
-
-def load_data_from_file(file_path):
-    """Carga los datos de recursos y productos desde un archivo YAML."""
-    if not os.path.exists(file_path):
-        raise FileNotFoundError(f"Error: El archivo no fue encontrado en la ruta especificada: {file_path}")
-
-    with open(file_path, 'r', encoding='utf-8') as file:
-        try:
-            datos = yaml.load(file, Loader=SafeLoader)
-        except Exception as e:
-            raise Exception(f"Error al parsear el archivo YAML. Revise el formato: {e}")
-            
-    if "recursos" not in datos or "productos" not in datos:
-        raise ValueError("La estructura del archivo es incorrecta. Faltan las claves 'recursos' o 'productos'.")
-    
-    # Asegurar que 'gastos_operacion' existe, si no, inicializarlo como un diccionario vacío
-    
-    if "gastos_operacion" not in datos:
-         datos["gastos_operacion"] = {}
-
-    return datos
 
 # ----------------------------------------------------------------------
 ## FUNCIÓN PRINCIPAL: EJECUCIÓN DEL ANÁLISIS TOC (VERSION FINAL)
 # ----------------------------------------------------------------------
 
-def run_toc_analysis(file_to_load, output_csv_file, output_txt_file):
+def run_toc_analysis(datos, output_csv_file, output_txt_file, input_filename="Datos en Memoria"):
     """
     Ejecuta el análisis TOC completo, manejando la asignación de recursos
     con y sin la restricción principal para una asignación más precisa.
+    Recibe el diccionario de datos ya cargado.
     """
     
-    # 1. Cargar datos
-    datos = load_data_from_file(file_to_load)
+    # 1. Cargar datos (YA RECIBIDOS COMO ARGUMENTO)
+    # datos = load_data_from_file(file_to_load)
 
     # 2. Identificar la Restricción Global (Cálculo de Consumo Total)
     resource_consumption = {r: 0 for r in datos["recursos"]}
@@ -186,7 +160,7 @@ def run_toc_analysis(file_to_load, output_csv_file, output_txt_file):
     # Crear archivo de texto con el resumen
     with open(output_txt_file, "w") as f:
         f.write(f"*** RESULTADOS DEL MODELO DE OPTIMIZACIÓN TOC ***\n")
-        f.write(f"Datos de Entrada: {file_to_load}\n")
+        f.write(f"Datos de Entrada: {input_filename}\n")
         f.write(f"---------------------------------------------------\n")
         
         if has_bottleneck:

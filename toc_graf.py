@@ -1,35 +1,18 @@
 import networkx as nx
 import matplotlib.pyplot as plt
 import os
-import yaml
-from yaml.loader import SafeLoader
 
 # ----------------------------------------------------------------------
-## FUNCIÓN HELPER: CARGA DE DATOS YAML (Simplificada para solo lectura)
-# ----------------------------------------------------------------------
-
-def load_data_from_file(file_path):
-    """Carga los datos de recursos y productos desde un archivo YAML."""
-    if not os.path.exists(file_path):
-        raise FileNotFoundError(f"Error: El archivo no fue encontrado en la ruta especificada: {file_path}")
-
-    with open(file_path, 'r', encoding='utf-8') as file:
-        datos = yaml.load(file, Loader=SafeLoader)
-
-    # Tolerancia a la clave gastos_operacion (NUEVA LÍNEA)
-    if "gastos_operacion" not in datos:
-         datos["gastos_operacion"] = {}
-    return datos
-
+## FUNCIÓN HELPER: CARGA DE DATOS YAML - MOVIDA A toc_read.py
 # ----------------------------------------------------------------------
 ## FUNCIÓN PRINCIPAL: EJECUCIÓN DE LA GRÁFICA
 # ----------------------------------------------------------------------
 
-def run_toc_graph(yaml_file, output_filename):
+def run_toc_graph(datos, output_filename):
     """Genera y guarda el diagrama de procesos TOC usando networkx y bipartite_layout."""
     
-    # 0. Cargar los datos desde el archivo YAML
-    datos = load_data_from_file(yaml_file)
+    # 0. Datos ya cargados
+    # datos = load_data_from_file(yaml_file)
 
     # 1. Inicializar el grafo
     G = nx.DiGraph()
