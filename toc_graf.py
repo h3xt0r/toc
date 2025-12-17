@@ -61,7 +61,8 @@ def run_toc_graph(datos, output_filename):
     # Usar spring_layout para una distribución más orgánica (evita las dos columnas rígidas)
     # G: El grafo a dibujar; k controla la distancia entre nodos (valor más alto = más separados)
     # seed: Semilla para reproducibilidad del layout aleatorio
-    pos = nx.spring_layout(G, k=0.65, seed=None)  # seed=42 para reproducibilidad, None para aleatorio
+    pos = nx.spring_layout(G, k=0.65, seed=42)  # seed=42 para reproducibilidad, None para aleatorio
+    # pos = nx.kamada_kawai_layout(G)
 
     plt.figure(figsize=(10, 6))
 
