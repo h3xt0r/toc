@@ -58,8 +58,9 @@ def run_toc_graph(datos, output_filename):
     sizes = [resource_sizes.get(n, base_size * 0.5) for n in node_list] 
     colors = [node_colors.get(n, 'lightgreen') if G.nodes[n].get('node_type') == 'Resource' else 'yellow' for n in node_list]
 
-    # Usar el Bipartite Layout para separación clara
-    pos = nx.bipartite_layout(G, product_nodes) 
+    # Usar spring_layout para una distribución más orgánica (evita las dos columnas rígidas)
+    # k controla la distancia entre nodos (valor más alto = más separados)
+    pos = nx.spring_layout(G, k=0.5, seed=42) 
 
     plt.figure(figsize=(10, 6))
 

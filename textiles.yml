@@ -1,3 +1,7 @@
+generales:
+    empresa: textilesAlfa
+    fecha: 2025-12-26
+
 recursos:   # lista de los recursos de la empresa con su disponibilidad de tiempo
     maquina_cortar: 2400  # tiempo en minutos
     maquina_coser: 2400  # minutos
