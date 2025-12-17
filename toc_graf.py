@@ -59,8 +59,9 @@ def run_toc_graph(datos, output_filename):
     colors = [node_colors.get(n, 'lightgreen') if G.nodes[n].get('node_type') == 'Resource' else 'yellow' for n in node_list]
 
     # Usar spring_layout para una distribución más orgánica (evita las dos columnas rígidas)
-    # k controla la distancia entre nodos (valor más alto = más separados)
-    pos = nx.spring_layout(G, k=0.5, seed=42) 
+    # G: El grafo a dibujar; k controla la distancia entre nodos (valor más alto = más separados)
+    # seed: Semilla para reproducibilidad del layout aleatorio
+    pos = nx.spring_layout(G, k=0.65, seed=None)  # seed=42 para reproducibilidad, None para aleatorio
 
     plt.figure(figsize=(10, 6))
 

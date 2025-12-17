@@ -3,8 +3,8 @@ generales:
     fecha: 2025-12-26
 
 recursos:
-    consultor_senior: 320 # 160 horas al mes por dos
-    analista_junior: 480 # tres personas por 160 horas c/u (aumentando la restriccion)
+    consultor_senior: 160 # 160 horas al mes por dos
+    analista_junior: 160 # tres personas por 160 horas c/u (aumentando la restriccion)
     equipo_soporte: 320  # 2 personas * 160 horas
 
 productos:

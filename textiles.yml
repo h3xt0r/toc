@@ -18,8 +18,8 @@ productos:  # lista de los productos vendidos
     camisa_mujer:
         costo_ventas: 45  # unidades monetarias
         recursos:
-            maquina_cortar: 4  # minutos
-            maquina_coser: 13  #minutos
+            maquina_cortar: 2  # minutos
+            maquina_coser: 15  #minutos
         precio: 105  # unidades monetarias
         demanda: 120  # unidades vendidas
 
