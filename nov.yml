@@ -1,3 +1,7 @@
+generales:
+    empresa: iesencial
+    fecha: nov25
+
 recursos:
     ian: 128 # 160 horas al mes por dos
     rodrigo: 128 # tres personas por 160 horas c/u (aumentando la restriccion)

@@ -53,7 +53,9 @@ def run_toc_tool(yaml_file):
             print(f"\n⚠️ Directorio '{output_dir}' ya existe. Los archivos serán sobrescritos.")
             
         # Extraer fecha de la sección 'generales' para usar en los nombres de archivo
-        analysis_date = str(data.get("generales", {}).get("fecha", "YYYY-MM-DD")).strip()
+        # Reemplazar caracteres que puedan ser problemáticos en nombres de archivo
+        raw_date = str(data.get("generales", {}).get("fecha", "YYYY-MM-DD")).strip()
+        analysis_date = raw_date.replace('/', '-').replace('\\', '-').replace(' ', '_')
         
         # Definir rutas de salida
         csv_path = os.path.join(output_dir, f"{analysis_date}_resultados_toc.csv")
