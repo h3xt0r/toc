@@ -18,11 +18,19 @@ def clean():
     print("\nLimpiando archivos de configuracion viejos y dependencias no usadas\n")
     # 'autoremove' elimina paquetes que se instalaron como dependencias y ya no son necesarios.
     # 'autoclean' y 'clean' limpian el cache de paquetes descargados.
-    limpieza=["apt autoremove --purge -y", "apt autoclean", "apt clean"] 
+    limpieza=["apt autoremove --purge -y", 
+              "apt autoclean", 
+              "apt clean",
+              "appstreamcli refresh-cache --force", # Mantiene Discover con iconos y descripciones frescas
+              "pkcon refresh force"  # Refresca el motor de Discover (PackageKit)] 
+             ]                   
     for l in limpieza:
         print("\nEjecutando:",l,"\n")
         system(l)
-    print("\nSistema limpio de archivos viejos. ¡Órale! ;-)\n\n\n")
+        
+    # Limpieza de caché de usuario para evitar los "Binding loops" que vimos
+    system("rm -rf ~/.cache/discover")
+    print("\nSistema y Discover limpio de archivos viejos. ¡Órale! ;-)\n\n\n")
     return
 
 # Todas las funciones juntas: Actualizar y Limpiar
