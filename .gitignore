@@ -1,6 +1,7 @@
 # python environment
 py312
 __pycache__/
+venv/
 # archivos de salida
 *.csv
 *.txt

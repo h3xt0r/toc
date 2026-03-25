@@ -27,3 +27,4 @@ El dinero es un concepto común aceptado para medir el valor.
 - Inventario: Todo el dinero que el sistema gasta en cosas que intenta convertir en througput, es el dinero que le pagamos a los proveedores por las entradas de nuesto sistema.
 - Gastos de operación: Todo el dinero que el sistema gasta para convertir el inventario en throughput (salarios, gastos por interes, impuestos, rentas, seguros, etc.) El dinero que el sistema gasta en si mismo.
 
+pp 17/241
