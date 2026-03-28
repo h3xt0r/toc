@@ -1,0 +1,130 @@
+generales:
+    empresa: iesencial
+    fecha: 2026-03-27
+
+recursos:
+    ian: 160 # 160 horas al mes 
+    rodrigo: 160 
+
+# Productos y servicios vendidos    
+productos:
+    # 1. fumikiller
+    fumi-poliza:
+        costo_ventas: 0  # Costo de licencias o software third-party
+        recursos:
+            ian: 7 # horas por demanda (consulta, app, etc)
+            rodrigo: 1 # horas por demanda (consulta, app, etc)
+        precio: 5220
+        demanda: 1  # Demanda mensual máxima
+
+    # reisix
+    resix-poliza:
+        costo_ventas: 1190.14
+        recursos:
+            ian: 5
+            rodrigo: 5
+        precio: 8788.99
+        demanda: 1
+    
+    duncan-poliza:
+        costo_ventas: 0  # costo de licencias, transporte u otros
+        recursos:
+            ian: 3.5   # horas por servicio
+            rodrigo: 0   # horas por servicio
+        precio: 4060  # precio por servicio
+        demanda: 1   # numero de servicios por mes
+
+    sng:
+        costo_ventas: 602
+        recursos:
+            ian: 4
+            rodrigo: 4.5
+        precio: 7540
+        demanda: 1
+    
+    Manhatan-video:
+        costo_ventas: 0
+        recursos:
+            ian: 2
+            rodrigo: 2
+        precio: 1740
+        demanda: 1
+
+    Manhatan-site:
+        costo_ventas: 0
+        recursos: 
+            ian: 2
+            rodrigo: 2
+        precio: 2088
+        demanda: 1
+    
+    GutLegal-balanceador:
+        costo_ventas: 1200
+        recursos:
+            rodrigo: 4
+        precio: 2000
+        demanda: 1
+
+    ducan-proyecto:
+        costo_ventas: 46551.59
+        recursos:
+            ian: 1
+            rodrigo: 2
+        precio: 51657.04
+        demanda: 1
+
+    elite:
+        costo_ventas: 0
+        recursos:
+            ian: 2.5
+        precio: 928
+        demanda: 1
+
+    # Administacion y mantenimiento
+    labor_ventas:
+        costo_ventas: 0
+        recursos:
+            rodrigo: 8
+        precio: 0
+        demanda: 1
+
+    limpieza:
+        costo_ventas: 0
+        recursos:
+            ian: 0.5
+            rodrigo: 6
+        precio: 0
+        demanda: 1
+
+    facturacion:
+        costo_ventas: 0
+        recursos:
+            ian: 1
+            rodrigo: 0
+        precio: 0
+        demanda: 1
+
+    reportes:
+        costo_ventas: 0
+        recursos:
+            rodrigo: 6
+            ian: 1
+        precio: 0
+        demanda: 1
+
+    cotizaciones:
+        costo_ventas: 0
+        recursos:
+            rodrigo: 6
+            ian: 0
+        precio: 0
+        demanda: 1
+
+# Gastos de operacion (Sueldos, luz, agua, telefono, etc.)
+gastos_operacion:  # poner aqui los gasto de operacion de acuerdo con TOC
+    sueldos: 22000
+    luz: 83
+    telefono: 650
+    dominios: 1060
+    agua: 0
+    google: 585

@@ -76,6 +76,7 @@ def run_toc_tool(yaml_file):
         print("✅ Análisis TOC completado y archivos CSV/TXT guardados.")
     except Exception as e:
         print(f"❌ Error crítico durante el análisis TOC: {e}")
+        
         # Detenemos si falla el análisis de datos
         return 
     
